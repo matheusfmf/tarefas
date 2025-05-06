@@ -26,7 +26,12 @@
     color: #FFF;
     font-size: 32px;
 }
-
+@media (max-width: 768px) {
+    .logo {
+      font-size: 24px;
+    }
+  }
+ 
 .logo span{
     color: #ea3140;
     padding-left: 2px;
@@ -40,6 +45,22 @@
     border: 1.5px solid #FFF;
     cursor: pointer;
 }
+
+/* Telas menores (tablets e celulares) */
+@media (max-width: 768px) {
+    .loginButton {
+      padding: 6px 24px;
+      border-radius: 20px;
+    }
+  }
+  
+  /* Telas bem pequenas (celulares pequenos) */
+  @media (max-width: 480px) {
+    .loginButton {
+      padding: 4px 16px;
+      border-radius: 16px;
+    }
+  }
 
 .loginButton:hover{
     transform: scale(1.08);
