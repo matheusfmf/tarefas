@@ -22,6 +22,18 @@ export default function Dashboard({ user}: HomeProps) {
     const [input, setInput] = useState("")
     const [publicTask, setPublicTask] = useState(false)
 
+    useEffect(() => {
+        async function loadTarefas(){
+
+            const tarefasRef = collection(db, "tarefas")
+            const q = query(
+
+            )
+
+        }
+        loadTarefas();
+    }, [])
+
     function handleChangePublic(event: ChangeEvent<HTMLInputElement>){
             setPublicTask(event.target.checked)
     }
